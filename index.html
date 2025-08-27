@@ -13,14 +13,6 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Google-Font -->
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Font-awesome-->
     <script
       src="https://kit.fontawesome.com/09ed3ee267.js"
@@ -30,13 +22,8 @@
       href="https://db.onlinewebfonts.com/c/4e2ffdd669618de8991fddb0b820892a?family=Li+Ador+Noirrit+A-V1"
       rel="stylesheet"
     />
-    <style>
-      .font-inter {
-        font-family: "Inter", sans-serif;
-      }
-    </style>
   </head>
-  <body class="font-inter">
+  <body>
     <header>
       <!-- Navber Section -->
       <section>
@@ -89,6 +76,41 @@
             </div>
           </div>
         </div>
+      </section>
+      
+      <!-- Service-Card-Section -->
+      <section
+        id="service-container"
+        class="py-10 grid grid-cols-12 gap-8 bg-[#41FF6B1A]"
+      >
+        <section id="service-card" class="col-span-9 w-11/12 mx-auto ">
+          <div class="grid grid-cols-3">
+            <div class="service-card-part-1">
+              <div class="card bg-base-100 shadow-md rounded-xl py-8">
+               <div class="flex justify-between items-center mx-5">
+                  <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
+                    <img class="w-10" src="./assets/emergency.png" alt="" />
+                  </figure>
+                <p><i class="fa-regular fa-heart text-2xl"></i></p>
+              </div>
+                <div class="card-body">
+                  <h2 class="card-title text-2xl">জাতীয় জরুরি সেবা</h2>
+                  <p class="text-[18px] text-gray-600">National Emergency</p>
+                  <h2 class="card-title text-2xl font-bold">999</h2>
+                  <div class="bg-gray-200 rounded-full w-28 p-2 text-center"> <p class="text-[18px] text-gray-600">সার্বজনীন</p></div>
+                   
+                  </div>
+                  <div class="w-full flex gap-5">
+                    <button class="btn p-4 w-36 ml-5 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"><i class="fa-regular fa-copy"></i>Copy</button>
+                    <button class="btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-part-2"></div>
+            <div class="service-card-part-3"></div>
+          </div>
+        </section>
       </section>
     </main>
     <footer></footer>
