@@ -26,7 +26,10 @@
       src="https://kit.fontawesome.com/09ed3ee267.js"
       crossorigin="anonymous"
     ></script>
-
+    <link
+      href="https://db.onlinewebfonts.com/c/4e2ffdd669618de8991fddb0b820892a?family=Li+Ador+Noirrit+A-V1"
+      rel="stylesheet"
+    />
     <style>
       .font-inter {
         font-family: "Inter", sans-serif;
@@ -37,17 +40,19 @@
     <header>
       <!-- Navber Section -->
       <section>
-        <nav class="flex justify-between items-center px-14 py-6">
+        <nav
+          class="flex flex-col md:flex-row justify-center md:justify-between items-center px-14 py-5"
+        >
           <div class="flex justify-between items-center gap-3">
             <figure>
-              <img class="w-14 h-14" src="./assets/logo.png" alt="" />
+              <img class="w-14 md:h-14" src="./assets/logo.png" alt="" />
             </figure>
             <h2 class="text-3xl font-bold text-[#006747]">
               Emergency <br />
               Service
             </h2>
           </div>
-          <div>
+          <div class="flex justify-between items-center">
             <button class="btn w-32 bg-[#41FF6B1A] rounded-full p-6 mr-4">
               <p class="text-xl font-extrabold mr-2">0</p>
               <img class="w-8" src="./assets/heart.png" alt="" />
@@ -63,7 +68,29 @@
         </nav>
       </section>
     </header>
-    <main></main>
+    <main>
+      <!-- Banner-section -->
+      <section class="banner-container">
+        <div
+          class="hero bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full px-14 py-3"
+        >
+          <div class="hero-content text-center text-white">
+            <div class="">
+              <figure class="flex justify-center items-center">
+                <img class="w-28" src="./assets/logo-dark.png" alt="" />
+              </figure>
+              <h1 class="text-3xl md:text-4xl font-bold pt-3">
+                জরুরি সেবা ডিরেক্টরি
+              </h1>
+              <p class="py-6 text-xl font-bold">
+                Government Emergency Services at Your Fingertip – A Project by
+                Government of the People’s Republic of Bangladesh
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
