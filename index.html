@@ -41,7 +41,7 @@
           </div>
           <div class="flex justify-between items-center">
             <button class="btn w-32 bg-[#41FF6B1A] rounded-full p-6 mr-4">
-              <p class="text-xl font-extrabold mr-2">0</p>
+              <p id="heart-count" class="text-xl font-extrabold mr-2">0</p>
               <img class="w-8" src="./assets/heart.png" alt="" />
             </button>
             <button class="btn w-32 bg-[#41FF6B1A] rounded-full p-6 mr-4">
@@ -83,17 +83,21 @@
         id="service-container"
         class="py-10 grid grid-cols-12 gap-8 bg-[#41FF6B1A]"
       >
-        <section id="service-card-container" class="col-span-9 w-11/12 mx-auto">
-          <div class="border-3">
+        <section
+          id="service-card-container"
+          class="col-span-12 md:col-span-9 order-1 w-11/12 mx-auto"
+        >
+          <div class="">
             <div class="service-card grid grid-cols-1 md:grid-cols-3 gap-5">
               <!-- card-1 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/emergency.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">জাতীয় জরুরি সেবা</h2>
@@ -105,25 +109,26 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
                 </div>
               </div>
               <!-- card-2 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/police.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">পুলিশ</h2>
@@ -147,13 +152,14 @@
                 </div>
               </div>
               <!-- card-3 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/fire-service.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">ফায়ার সার্ভিস</h2>
@@ -177,13 +183,14 @@
                 </div>
               </div>
               <!-- card-4 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/ambulance.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">অ্যাম্বুলেন্স</h2>
@@ -207,13 +214,14 @@
                 </div>
               </div>
               <!-- card-5 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/emergency.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">নারী ও শিশু সহায়তা</h2>
@@ -239,13 +247,14 @@
                 </div>
               </div>
               <!-- card-6 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/emergency.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">দুদক</h2>
@@ -269,13 +278,14 @@
                 </div>
               </div>
               <!-- card-7 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/emergency.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">বিদ্যুৎ বিভ্রাট</h2>
@@ -299,13 +309,14 @@
                 </div>
               </div>
               <!-- card-8 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
                     <img class="w-10" src="./assets/brac.png" alt="" />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">ব্র্যাক</h2>
@@ -329,7 +340,6 @@
                 </div>
               </div>
               <!-- card-9 -->
-
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
                 <div class="flex justify-between items-center mx-5">
                   <figure class="bg-[#FFE3E2] rounded-xl w-16 h-16">
@@ -339,7 +349,9 @@
                       alt=""
                     />
                   </figure>
-                  <p><i class="fa-regular fa-heart text-2xl"></i></p>
+                  <p>
+                    <i class="fa-regular fa-heart text-2xl heart-icon"></i>
+                  </p>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title text-2xl">বাংলাদেশ রেলওয়ে</h2>
@@ -365,9 +377,10 @@
             </div>
           </div>
         </section>
+
         <!-- History section -->
-        <aside id="history-box" class="col-span-3 mr-10">
-          <div>
+        <aside id="history-box" class="col-span-12 md:col-span-3 order-2 mr-10">
+          <div class="grid grid-cols-1 bg-white rounded-xl">
             <div
               class="call-history bg-white p-5 rounded-xl flex justify-between items-center"
             >
@@ -375,8 +388,8 @@
                 <i class="fa-regular fa-clock font-bold"></i> Call History
               </p>
               <button
-                class="btn p-3 w-28 bg-[#00A63E] rounded-3xl text-white text-[16px]"
                 id="btn-clear"
+                class="btn p-3 w-28 bg-[#00A63E] rounded-3xl text-white text-[16px] hover:bg-gray-300 hover:text-black hover:border-black"
               >
                 Clear
               </button>
@@ -386,5 +399,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="./service.js"></script>
   </body>
 </html>
