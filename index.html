@@ -39,17 +39,19 @@
               Service
             </h2>
           </div>
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between items-center m-4 md:m-0">
             <button class="btn w-32 bg-[#41FF6B1A] rounded-full p-6 mr-4">
               <p id="heart-count" class="text-xl font-extrabold mr-2">0</p>
               <img class="w-8" src="./assets/heart.png" alt="" />
             </button>
             <button class="btn w-32 bg-[#41FF6B1A] rounded-full p-6 mr-4">
-              <p class="text-xl font-extrabold mr-2">100</p>
+              <p id="coin-count" class="text-xl font-extrabold mr-2">100</p>
               <img class="w-8" src="./assets/coin.png" alt="" />
             </button>
             <button class="btn bg-[#00A63E] w-36 py-6 rounded-full">
-              <p class="text-xl font-semibold text-white">2 Copy</p>
+              <p class="text-xl font-semibold text-white">
+                <span>0</span> Copy
+              </p>
             </button>
           </div>
         </nav>
@@ -78,16 +80,16 @@
         </div>
       </section>
 
-      <!-- Service-Card-Section -->
+      <!-- Emergency Hotline Section -->
       <section
-        id="service-container"
+        id="emergency-hotline-container"
         class="py-10 grid grid-cols-12 gap-8 bg-[#41FF6B1A]"
       >
         <section
           id="service-card-container"
           class="col-span-12 md:col-span-9 order-1 w-11/12 mx-auto"
         >
-          <div class="">
+          <div id="service">
             <div class="service-card grid grid-cols-1 md:grid-cols-3 gap-5">
               <!-- card-1 -->
               <div class="card bg-base-100 shadow-md rounded-xl py-8">
@@ -114,7 +116,7 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -140,12 +142,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -171,12 +173,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -202,12 +204,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -235,12 +237,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -266,12 +268,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -297,12 +299,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -328,12 +330,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -363,12 +365,12 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-28 md:w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn p-4 w-28 md:w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
+                    class="btn call-btn p-4 w-36 bg-[#00A63E] rounded-lg text-white text-[16px] hover:bg-gray-300 hover:text-black"
                   >
                     <i class="fa-solid fa-phone mr-2"></i> Call
                   </button>
@@ -379,10 +381,13 @@
         </section>
 
         <!-- History section -->
-        <aside id="history-box" class="col-span-12 md:col-span-3 order-2 mr-10">
-          <div class="grid grid-cols-1 bg-white rounded-xl">
+        <aside
+          id="history-box"
+          class="col-span-12 md:col-span-3 order-2 mx-2 md:mr-10 bg-white rounded-xl"
+        >
+          <div class="grid grid-cols-1" id="call-history-add">
             <div
-              class="call-history bg-white p-5 rounded-xl flex justify-between items-center"
+              class="call-history p-5 flex justify-between items-center mt-3"
             >
               <p class="font-bold text-[16px]">
                 <i class="fa-regular fa-clock font-bold"></i> Call History
