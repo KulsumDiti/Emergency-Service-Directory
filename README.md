@@ -2,17 +2,17 @@
 
 ## Ans To THe Question No-1:
 
-getElementById(id): It selects a single element based on its unique"id".This is the most direct and generally fastest method when we know the elements specific ID.
+getElementById(id) : It selects a single element based on its unique"id".This is the most direct and generally fastest method when we know the elements specific ID.
 
-getElementsByClassName(className): It Selects all elements that have a specific class name. It returns a collection of elements.
+getElementsByClassName(className) : It Selects all elements that have a specific class name. It returns a collection of elements.
 
-querySelector(selector): It Selects the first element that matches a specified CSS selector.This offers high flexibility as it can select by ID (#id), class (.class), tag name (tag), or any other valid CSS selector combination.
+querySelector(selector) : It Selects the first element that matches a specified CSS selector.This offers high flexibility as it can select by ID (#id), class (.class), tag name (tag), or any other valid CSS selector combination.
 
-querySelectorAll(selector): It Selects all elements that match a specified CSS selector. Similar to querySelector, it provides broad selection capabilities but returns a collection of all matching elements.
+querySelectorAll(selector) : It Selects all elements that match a specified CSS selector. Similar to querySelector, it provides broad selection capabilities but returns a collection of all matching elements.
 
 ## Ans To THe Question No-2:
 
-To create and insert new element,first i use document.createElement(tagName) to create it in memory.Then i add content using textContent or innerHTML. Finally, insert it into DOM using appendChild()to add the end.
+To create and insert new element,first i use document.createElement(tagName) to create it in memory.Then i add content using textContent or innerHTML. Finally, insert it into DOM using appendChild() to add the end.
 
 ## Ans To THe Question No-3:
 
