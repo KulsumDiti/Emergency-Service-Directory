@@ -50,7 +50,7 @@
             </button>
             <button class="btn bg-[#00A63E] w-36 py-6 rounded-full">
               <p class="text-xl font-semibold text-white">
-                <span>0</span> Copy
+                <span id="copy-number">0</span> Copy
               </p>
             </button>
           </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -142,7 +142,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -204,7 +204,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -268,7 +268,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -299,7 +299,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -330,7 +330,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -365,7 +365,7 @@
                 </div>
                 <div class="w-full flex gap-3 text-center">
                   <button
-                    class="btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
+                    class="btn copy-btn p-4 w-36 ml-4 rounded-lg border-2 border-gray-400 text-gray-600 text-[16px] hover:bg-gray-800 hover:text-white"
                   >
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
@@ -385,7 +385,7 @@
           id="history-box"
           class="col-span-12 md:col-span-3 order-2 mx-2 md:mr-10 bg-white rounded-xl"
         >
-          <div class="grid grid-cols-1" id="call-history-add">
+          <div class="grid grid-cols-1">
             <div
               class="call-history p-5 flex justify-between items-center mt-3"
             >
@@ -393,12 +393,13 @@
                 <i class="fa-regular fa-clock font-bold"></i> Call History
               </p>
               <button
-                id="btn-clear"
+                id="history-clear-btn"
                 class="btn p-3 w-28 bg-[#00A63E] rounded-3xl text-white text-[16px] hover:bg-gray-300 hover:text-black hover:border-black"
               >
                 Clear
               </button>
             </div>
+            <div id="call-history-add"></div>
           </div>
         </aside>
       </section>
